@@ -29,6 +29,9 @@ class LoginView extends StatelessWidget {
                     InputTextFieldWidget(
                       controller: _emailController,
                     ),
+                    SizedBox(
+                      height: 0.02.sh,
+                    ),
                     const Text("Email "),
                     SizedBox(
                       height: 0.01.sh,
@@ -37,7 +40,7 @@ class LoginView extends StatelessWidget {
                       controller: _passwordController,
                     ),
                     SizedBox(
-                      height: 0.01.sh,
+                      height: 0.02.sh,
                     ),
                     PrimaryButtonWidget(
                       buttonTitle: "Sign In",
