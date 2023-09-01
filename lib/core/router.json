@@ -1,0 +1,25 @@
+{
+    "last_updated": "Fri, 01 Sep 2023 05:58:10 GMT",
+    "routes": [
+        {
+            "file_path": "views/login/login_view.dart",
+            "route_name": "loginViewRoute",
+            "view_name": "LoginView"
+        },
+        {
+            "file_path": "views/splash/splash_view.dart",
+            "route_name": "splashViewRoute",
+            "view_name": "SplashView"
+        },
+        {
+            "file_path": "views/sign_up/sign_up_view.dart",
+            "route_name": "sign_upViewRoute",
+            "view_name": "SignUpView"
+        },
+        {
+            "file_path": "views/home/home_view.dart",
+            "route_name": "homeViewRoute",
+            "view_name": "HomeView"
+        }
+    ]
+}
