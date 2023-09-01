@@ -13,10 +13,10 @@ class PrimaryButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: Container(
         width: 1.sw,
-        height: 0.05.sh,
+        height: 0.06.sh,
         decoration: BoxDecoration(
             color: const Color(0xFF6268AB),
             borderRadius: BorderRadius.circular(15)),
