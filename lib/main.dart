@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(useMaterial3: true),
           navigatorKey: locator<NavigationService>().navigatorKey,
           onGenerateRoute: router.Router.generateRoute,
-          initialRoute: loginViewRoute,
+          initialRoute: splashViewRoute,
         );
       },
     );
