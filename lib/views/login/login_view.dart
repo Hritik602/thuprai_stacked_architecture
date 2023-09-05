@@ -6,10 +6,18 @@ import 'package:thuprai_stacked_app/widgets/dumb_widgets/input_text_field/input_
 import 'package:thuprai_stacked_app/widgets/dumb_widgets/primary/primary_button_widget.dart';
 import 'login_view_model.dart';
 
-class LoginView extends StatelessWidget {
-  LoginView({super.key});
+class LoginView extends StatefulWidget {
+  const LoginView({super.key});
+
+  @override
+  State<LoginView> createState() => _LoginViewState();
+}
+
+class _LoginViewState extends State<LoginView> {
   final TextEditingController _emailController = TextEditingController();
+
   final TextEditingController _passwordController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<LoginViewModel>.reactive(
