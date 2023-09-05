@@ -22,20 +22,17 @@ class LoginView extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Text("Full Name"),
+                    const Text("Email "),
                     SizedBox(
-                      height: 0.01.sh,
+                      height: 0.02.sh,
                     ),
                     InputTextFieldWidget(
                       controller: _emailController,
                     ),
                     SizedBox(
-                      height: 0.02.sh,
-                    ),
-                    const Text("Email "),
-                    SizedBox(
                       height: 0.01.sh,
                     ),
+                    const Text("Password"),
                     InputTextFieldWidget(
                       controller: _passwordController,
                     ),
