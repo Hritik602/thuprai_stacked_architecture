@@ -5,13 +5,25 @@ import 'package:thuprai_stacked_app/widgets/dumb_widgets/book_list_tile/book_lis
 import 'home_view_model.dart';
 
 class HomeView extends StatelessWidget {
+  const HomeView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.reactive(
       viewModelBuilder: () => HomeViewModel(),
       builder: (BuildContext context, HomeViewModel viewModel, Widget? _) {
         return Scaffold(
-            appBar: AppBar(),
+            appBar: AppBar(
+              actions: [
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(
+                    Icons.more_vert,
+                  ),
+                  color: Colors.black,
+                )
+              ],
+            ),
             body: SafeArea(
                 minimum: const EdgeInsets.all(10),
                 child: FutureBuilder(
@@ -30,6 +42,10 @@ class HomeView extends StatelessWidget {
                         itemBuilder: (context, index) {
                           return BookListTile(
                             books: bookReleaseModel.results![index],
+                            onTap: () {
+                              // viewModel.navigateToBookDetailPage(
+                              //     bookReleaseModel.results![index].slug!);
+                            },
                           );
                         });
                   },
