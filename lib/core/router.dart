@@ -7,6 +7,7 @@ import 'package:thuprai_stacked_app/views/login/login_view.dart' as view0;
 import 'package:thuprai_stacked_app/views/splash/splash_view.dart' as view1;
 import 'package:thuprai_stacked_app/views/sign_up/sign_up_view.dart' as view2;
 import 'package:thuprai_stacked_app/views/home/home_view.dart' as view3;
+import 'package:thuprai_stacked_app/views/book_detail_page/book_detail_page_view.dart' as view4;
 
 class Router {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -19,6 +20,8 @@ class Router {
         return MaterialPageRoute(builder: (_) => view2.SignUpView());
       case homeViewRoute:
         return MaterialPageRoute(builder: (_) => view3.HomeView());
+      case bookDetailPageViewRoute:
+        return MaterialPageRoute(builder: (_) => view4.BookDetailPageView());
       default:
         return MaterialPageRoute(
           builder: (_) => Scaffold(
