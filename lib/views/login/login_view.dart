@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:stacked/stacked.dart';
+import 'package:thuprai_stacked_app/views/login/model/sign_in_request.dart';
 import 'package:thuprai_stacked_app/widgets/dumb_widgets/input_text_field/input_text_field_widget.dart';
 import 'package:thuprai_stacked_app/widgets/dumb_widgets/primary/primary_button_widget.dart';
 import 'login_view_model.dart';
@@ -42,7 +43,9 @@ class LoginView extends StatelessWidget {
                     PrimaryButtonWidget(
                       buttonTitle: "Sign In",
                       onTap: () {
-                        debugPrint("Clicked");
+                        viewModel.signInUser(SignInRequest(
+                            email: _emailController.text,
+                            password: _passwordController.text));
                       },
                     )
                   ],

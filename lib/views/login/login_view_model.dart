@@ -13,7 +13,7 @@ class LoginViewModel extends BaseViewModel {
   final _dialogService = locator<DialogService>();
   final _authService = locator<AuthService>();
 
-  Future<void> signUpUser(SignInRequest request) async {
+  Future<void> signInUser(SignInRequest request) async {
     if (request.email?.isEmpty == true && request.password?.isEmpty == true) {
       _dialogService.showDialog(title: "Please fill all the details");
       //  showBasicDialog(tittle: "Error",);
